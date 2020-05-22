@@ -1,0 +1,1368 @@
+2020-05-20 22:09:52.150  INFO 1680 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 1680 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:09:52.160 DEBUG 1680 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:09:52.160  INFO 1680 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:09:53.250  INFO 1680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:09:53.407  INFO 1680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 7 JPA repository interfaces.
+2020-05-20 22:09:54.387  INFO 1680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:09:54.411  INFO 1680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:09:54.411  INFO 1680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:09:54.534  INFO 1680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:09:54.534  INFO 1680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2306 ms
+2020-05-20 22:09:55.076  INFO 1680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:09:55.158  INFO 1680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:09:55.297  INFO 1680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:09:55.404  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:09:55.554  INFO 1680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:09:55.573  INFO 1680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:09:56.644  INFO 1680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:09:56.654  INFO 1680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:09:58.099  WARN 1680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:09:58.492  INFO 1680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:09:58.629  INFO 1680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:09:59.111  INFO 1680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:09:59.115  INFO 1680 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.906 seconds (JVM running for 11.365)
+2020-05-20 22:10:35.408  INFO 1680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:10:35.409  INFO 1680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:10:35.426  INFO 1680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-20 22:10:35.469  INFO 1680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:10:35.585  WARN 1680 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:10:35.602  WARN 1680 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:10:35.663  INFO 1680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:10:38.682  INFO 1680 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:10:39.162  INFO 1680 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:10:41.034  INFO 1680 --- [http-nio-8080-exec-8] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:10:41.402  INFO 1680 --- [http-nio-8080-exec-8] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:10:44.823  INFO 1680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:10:44.832  INFO 1680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:10:52.601  INFO 1680 --- [http-nio-8080-exec-9] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[111, 2222, org.apache.catalina.session.StandardSessionFacade@406a5310, {}]}
+2020-05-20 22:10:52.608  INFO 1680 --- [http-nio-8080-exec-9] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:12:35.046  INFO 5488 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5488 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:12:35.053 DEBUG 5488 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:12:35.054  INFO 5488 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:12:36.439  INFO 5488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:12:36.598  INFO 5488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 7 JPA repository interfaces.
+2020-05-20 22:12:37.716  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:12:37.727  INFO 5488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:12:37.728  INFO 5488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:12:37.887  INFO 5488 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:12:37.888  INFO 5488 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2733 ms
+2020-05-20 22:12:38.131  INFO 5488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:12:38.381  INFO 5488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:12:38.514  INFO 5488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:12:38.624  INFO 5488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:12:38.790  INFO 5488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:12:38.810  INFO 5488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:12:39.892  INFO 5488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:12:39.901  INFO 5488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:12:41.396  WARN 5488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:12:41.697  INFO 5488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:12:41.912  INFO 5488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:12:42.344  INFO 5488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:12:42.347  INFO 5488 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.499 seconds (JVM running for 9.984)
+2020-05-20 22:14:17.123  INFO 5488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:14:17.123  INFO 5488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:14:17.145  INFO 5488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-05-20 22:14:18.422  INFO 5488 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:14:18.609  WARN 5488 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:14:18.635  WARN 5488 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:14:18.707  INFO 5488 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:14:24.399  INFO 5488 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:14:24.507  INFO 5488 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:14:25.818  INFO 5488 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:14:25.896  INFO 5488 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:14:28.590  INFO 5488 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:14:28.599  INFO 5488 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:14:34.904  INFO 5488 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[11111, 1111111, org.apache.catalina.session.StandardSessionFacade@7d353175, {}]}
+2020-05-20 22:14:34.915  INFO 5488 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:18:27.798  INFO 6044 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6044 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:18:27.803 DEBUG 6044 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:18:27.803  INFO 6044 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:18:30.427  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:18:30.555  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 7 JPA repository interfaces.
+2020-05-20 22:18:31.514  INFO 6044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:18:31.526  INFO 6044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:18:31.526  INFO 6044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:18:31.648  INFO 6044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:18:31.648  INFO 6044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3752 ms
+2020-05-20 22:18:31.965  INFO 6044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:18:32.042  INFO 6044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:18:32.172  INFO 6044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:18:32.278  INFO 6044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:18:32.424  INFO 6044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:18:32.442  INFO 6044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:18:33.533  INFO 6044 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:18:33.543  INFO 6044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:18:35.017  WARN 6044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:18:35.295  INFO 6044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:18:35.430  INFO 6044 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:18:35.800  INFO 6044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:18:35.802  INFO 6044 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.866 seconds (JVM running for 11.385)
+2020-05-20 22:19:45.204  INFO 6044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:19:45.204  INFO 6044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:19:45.224  INFO 6044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-05-20 22:19:45.269  INFO 6044 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:19:45.373  WARN 6044 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:19:45.388  WARN 6044 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:19:45.437  INFO 6044 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:19:51.491  INFO 6044 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:19:51.598  INFO 6044 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:19:53.103  INFO 6044 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:19:53.182  INFO 6044 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:19:55.084  INFO 6044 --- [http-nio-8080-exec-8] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:19:55.089  INFO 6044 --- [http-nio-8080-exec-8] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:20:02.662  INFO 6044 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[11111, 111111, org.apache.catalina.session.StandardSessionFacade@250a549e, {}]}
+2020-05-20 22:20:02.671  INFO 6044 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:25:38.299  INFO 5640 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5640 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:25:38.304 DEBUG 5640 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:25:38.304  INFO 5640 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:25:39.679  INFO 5640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:25:39.873  INFO 5640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178ms. Found 7 JPA repository interfaces.
+2020-05-20 22:25:40.848  INFO 5640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:25:40.860  INFO 5640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:25:40.860  INFO 5640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:25:41.008  INFO 5640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:25:41.008  INFO 5640 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2484 ms
+2020-05-20 22:25:41.327  INFO 5640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:25:41.399  INFO 5640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:25:41.542  INFO 5640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:25:41.650  INFO 5640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:25:41.796  INFO 5640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:25:41.816  INFO 5640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:25:42.880  INFO 5640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:25:42.889  INFO 5640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:25:44.280  WARN 5640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:25:44.563  INFO 5640 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:25:44.697  INFO 5640 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:25:45.050  INFO 5640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:25:45.053  INFO 5640 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.809 seconds (JVM running for 9.141)
+2020-05-20 22:26:01.055  INFO 5640 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:26:01.055  INFO 5640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:26:01.072  INFO 5640 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-20 22:26:01.117  INFO 5640 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:26:01.233  WARN 5640 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:26:01.252  WARN 5640 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:26:01.308  INFO 5640 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:26:04.090  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:26:04.224  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:26:06.351  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:26:06.427  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:26:08.808  INFO 5640 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:26:08.812  INFO 5640 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:26:13.396  INFO 5640 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[111111, 1111111, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:26:13.403  INFO 5640 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:27:36.690  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader;jsessionid=37FBAEB0336E1524A6F20C467397FBD5', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[ww, 19990402, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:27:36.699  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:27:46.631  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[yaoyao, 19990402, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:27:46.638  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:27:55.326  INFO 5640 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[yaoyao, 19990609, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:27:55.331  INFO 5640 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:27:57.682  INFO 5640 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[, , org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:27:57.687  INFO 5640 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:28:39.379  INFO 5640 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goCorrpass', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.goCorrpass', args=[]}
+2020-05-20 22:28:39.381  INFO 5640 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : result : {}/corrpass
+2020-05-20 22:28:56.384  INFO 5640 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/updateReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.updateReader', args=[yaoyao, 18730857731, 19990402]}
+2020-05-20 22:28:56.393  INFO 5640 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:29:02.584  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[yaoyao, 123456, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:29:02.587  INFO 5640 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:29:08.264  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/findReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.findReader', args=[yaoyao, 19990402, org.apache.catalina.session.StandardSessionFacade@771d2d8b, {}]}
+2020-05-20 22:29:08.272  INFO 5640 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}redirect:/
+2020-05-20 22:29:08.293  INFO 5640 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:29:08.306  INFO 5640 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:29:10.185  INFO 5640 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:29:10.198  INFO 5640 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:31:07.127  INFO 6964 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6964 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:31:07.133 DEBUG 6964 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:31:07.133  INFO 6964 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:31:08.397  INFO 6964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:31:08.562  INFO 6964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150ms. Found 7 JPA repository interfaces.
+2020-05-20 22:31:09.547  INFO 6964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:31:09.562  INFO 6964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:31:09.562  INFO 6964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:31:09.681  INFO 6964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:31:09.682  INFO 6964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2288 ms
+2020-05-20 22:31:10.041  INFO 6964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:31:10.117  INFO 6964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:31:10.257  INFO 6964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:31:10.375  INFO 6964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:31:10.520  INFO 6964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:31:10.540  INFO 6964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:31:11.661  INFO 6964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:31:11.671  INFO 6964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:31:13.173  WARN 6964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:31:13.618  INFO 6964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:31:13.770  INFO 6964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:31:14.168  INFO 6964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:31:14.171  INFO 6964 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.955 seconds (JVM running for 10.852)
+2020-05-20 22:31:14.645  INFO 6964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:31:14.646  INFO 6964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:31:14.675  INFO 6964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-05-20 22:31:14.724  INFO 6964 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:31:14.829  WARN 6964 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:31:14.845  WARN 6964 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:31:14.889  INFO 6964 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:40:02.767  INFO 6476 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6476 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:40:02.889 DEBUG 6476 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:40:02.891  INFO 6476 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:40:04.138  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:40:04.295  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 7 JPA repository interfaces.
+2020-05-20 22:40:05.269  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:40:05.280  INFO 6476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:40:05.281  INFO 6476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:40:05.439  INFO 6476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:40:05.439  INFO 6476 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2462 ms
+2020-05-20 22:40:05.801  INFO 6476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:40:05.886  INFO 6476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:40:06.015  INFO 6476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:40:06.120  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:40:06.261  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:40:06.282  INFO 6476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:40:07.461  INFO 6476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:40:07.470  INFO 6476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:40:08.809  WARN 6476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:40:09.089  INFO 6476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:40:09.224  INFO 6476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:40:09.582  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:40:09.585  INFO 6476 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.814 seconds (JVM running for 9.033)
+2020-05-20 22:40:24.906  INFO 6476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:40:24.906  INFO 6476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:40:24.923  INFO 6476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-20 22:40:24.966  INFO 6476 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:40:25.072  WARN 6476 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:40:25.087  WARN 6476 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:40:25.174  INFO 6476 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:40:27.724  INFO 6476 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:40:27.854  INFO 6476 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:40:29.394  INFO 6476 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:40:29.494  INFO 6476 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:40:30.715  INFO 6476 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:40:30.722  INFO 6476 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:40:32.948  INFO 6476 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goCorrpass', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.goCorrpass', args=[]}
+2020-05-20 22:40:32.949  INFO 6476 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}/corrpass
+2020-05-20 22:41:35.331  INFO 6688 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6688 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 22:41:35.335 DEBUG 6688 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:41:35.335  INFO 6688 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 22:41:36.170  INFO 6688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:41:36.306  INFO 6688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123ms. Found 7 JPA repository interfaces.
+2020-05-20 22:41:37.226  INFO 6688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 22:41:37.238  INFO 6688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 22:41:37.239  INFO 6688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 22:41:37.390  INFO 6688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 22:41:37.390  INFO 6688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1988 ms
+2020-05-20 22:41:37.754  INFO 6688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:41:37.829  INFO 6688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:41:37.960  INFO 6688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:41:38.068  INFO 6688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:41:38.208  INFO 6688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:41:38.228  INFO 6688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:41:39.276  INFO 6688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:41:39.284  INFO 6688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:41:40.627  WARN 6688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:41:40.914  INFO 6688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:41:41.049  INFO 6688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:41:41.414  INFO 6688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 22:41:41.416  INFO 6688 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.615 seconds (JVM running for 9.994)
+2020-05-20 22:41:46.700  INFO 6688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 22:41:46.701  INFO 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 22:41:46.720  INFO 6688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-05-20 22:41:46.764  INFO 6688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 22:41:46.871  WARN 6688 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:41:46.886  WARN 6688 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 22:41:46.936  INFO 6688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 22:41:49.226  INFO 6688 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:41:49.424  INFO 6688 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:41:50.968  INFO 6688 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:41:51.042  INFO 6688 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:41:52.900  INFO 6688 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:41:52.905  INFO 6688 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:41:54.399  INFO 6688 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goCorrpass', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.goCorrpass', args=[]}
+2020-05-20 22:41:54.401  INFO 6688 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}/corrpass
+2020-05-20 22:42:14.205  INFO 6688 --- [http-nio-8080-exec-9] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/updateReader', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.updateReader', args=[yaoyao, 13315392495, 123456, {}]}
+2020-05-20 22:42:14.210  INFO 6688 --- [http-nio-8080-exec-9] com.cedar.aspect.LogAspect               : result : {}/corrpass
+2020-05-20 22:42:20.669  INFO 6688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/blog/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.blog', args=[1, {}]}
+2020-05-20 22:42:20.695  INFO 6688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}blog
+2020-05-20 22:42:21.769  INFO 6688 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/comments/1', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.CommentController.commentList', args=[1, {}]}
+2020-05-20 22:42:21.799  INFO 6688 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}blog :: commentList
+2020-05-20 22:42:23.545  INFO 6688 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.gologin', args=[]}
+2020-05-20 22:42:23.545  INFO 6688 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}/readerLogin
+2020-05-20 22:42:25.166  INFO 6688 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/goRegister', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.ReaderController.goRegister', args=[]}
+2020-05-20 22:42:25.169  INFO 6688 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}/register
+2020-05-20 22:43:23.273  WARN 6364 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/mavenwarehouse/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/D:/mavenwarehouse/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-05-20 22:43:23.300  INFO 6364 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Starting MyblogsApplicationTests on XH1V6T6YLH1FMC9 with PID 6364 (started by Administrator in C:\Users\Administrator\Desktop\��Ŀ����\Myblogs)
+2020-05-20 22:43:23.301 DEBUG 6364 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 22:43:23.301  INFO 6364 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : The following profiles are active: dev
+2020-05-20 22:43:24.648  INFO 6364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 22:43:24.838  INFO 6364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173ms. Found 7 JPA repository interfaces.
+2020-05-20 22:43:26.597  INFO 6364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 22:43:26.760  INFO 6364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 22:43:27.053  INFO 6364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 22:43:27.586  INFO 6364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 22:43:27.844  INFO 6364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 22:43:27.878  INFO 6364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 22:43:29.628  INFO 6364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 22:43:29.640  INFO 6364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:43:33.275  WARN 6364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 22:43:34.147  INFO 6364 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:43:34.492  INFO 6364 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 22:43:35.307  INFO 6364 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Started MyblogsApplicationTests in 13.0 seconds (JVM running for 14.731)
+2020-05-20 22:43:35.704  INFO 6364 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-20 22:43:35.709  INFO 6364 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 22:43:35.713  INFO 6364 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-20 22:43:35.812  INFO 6364 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-20 23:01:44.383  INFO 2220 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 2220 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:01:44.389 DEBUG 2220 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:01:44.389  INFO 2220 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:01:45.821  INFO 2220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:01:45.983  INFO 2220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 7 JPA repository interfaces.
+2020-05-20 23:01:47.065  INFO 2220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:01:47.077  INFO 2220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:01:47.077  INFO 2220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:01:47.233  INFO 2220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:01:47.234  INFO 2220 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2615 ms
+2020-05-20 23:01:47.574  INFO 2220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:01:47.647  INFO 2220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:01:47.775  INFO 2220 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:01:47.885  INFO 2220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:01:48.025  INFO 2220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:01:48.044  INFO 2220 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:01:49.159  INFO 2220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:01:49.168  INFO 2220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:01:50.607  WARN 2220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:01:50.888  INFO 2220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:01:51.062  INFO 2220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:01:51.419  INFO 2220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:01:51.422  INFO 2220 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.17 seconds (JVM running for 9.413)
+2020-05-20 23:02:13.430  INFO 2220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:02:13.430  INFO 2220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:02:13.448  INFO 2220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-05-20 23:02:13.493  INFO 2220 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:02:13.603  WARN 2220 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:02:13.619  WARN 2220 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:02:13.662  INFO 2220 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:04:06.305  INFO 1424 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 1424 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:04:06.310 DEBUG 1424 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:04:06.312  INFO 1424 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:04:08.016  INFO 1424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:04:08.202  INFO 1424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171ms. Found 7 JPA repository interfaces.
+2020-05-20 23:04:09.682  INFO 1424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:04:09.711  INFO 1424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:04:09.713  INFO 1424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:04:09.921  INFO 1424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:04:09.921  INFO 1424 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3505 ms
+2020-05-20 23:04:10.379  INFO 1424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:04:10.478  INFO 1424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:04:10.661  INFO 1424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:04:10.804  INFO 1424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:04:11.029  INFO 1424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:04:11.061  INFO 1424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:04:12.667  INFO 1424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:04:12.683  INFO 1424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:04:14.295  WARN 1424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:04:14.608  INFO 1424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:04:14.746  INFO 1424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:04:15.328  INFO 1424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:04:15.331  INFO 1424 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.375 seconds (JVM running for 11.631)
+2020-05-20 23:04:25.945  INFO 1424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:04:25.946  INFO 1424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:04:25.966  INFO 1424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-05-20 23:04:26.010  INFO 1424 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:04:26.118  WARN 1424 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:04:26.131  WARN 1424 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:04:26.176  INFO 1424 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:18:29.964  INFO 1424 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:18:29.982  INFO 1424 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:19:01.042  INFO 1424 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:19:01.067  INFO 1424 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:27:23.469  INFO 4268 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 4268 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:27:23.474 DEBUG 4268 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:27:23.475  INFO 4268 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:27:24.475  INFO 4268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:27:24.615  INFO 4268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 7 JPA repository interfaces.
+2020-05-20 23:27:25.498  INFO 4268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:27:25.505  INFO 4268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:27:25.505  INFO 4268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:27:25.630  INFO 4268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:27:25.630  INFO 4268 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2074 ms
+2020-05-20 23:27:26.014  INFO 4268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:27:26.082  INFO 4268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:27:26.206  INFO 4268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:27:26.316  INFO 4268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:27:26.456  INFO 4268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:27:26.480  INFO 4268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:27:27.521  INFO 4268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:27:27.532  INFO 4268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:27:29.093  WARN 4268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:27:29.390  INFO 4268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:27:29.515  INFO 4268 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:27:29.952  INFO 4268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:27:29.968  INFO 4268 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.388 seconds (JVM running for 10.459)
+2020-05-20 23:27:39.833  INFO 4268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:27:39.836  INFO 4268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:27:39.853  INFO 4268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-20 23:27:39.897  INFO 4268 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:27:40.004  WARN 4268 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:27:40.023  WARN 4268 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:27:40.097  INFO 4268 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:28:05.300  INFO 6220 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6220 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:28:05.300 DEBUG 6220 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:28:05.300  INFO 6220 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:28:07.097  INFO 6220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:28:07.248  INFO 6220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137ms. Found 7 JPA repository interfaces.
+2020-05-20 23:28:08.165  INFO 6220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:28:08.177  INFO 6220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:28:08.178  INFO 6220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:28:08.405  INFO 6220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:28:08.405  INFO 6220 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3027 ms
+2020-05-20 23:28:08.760  INFO 6220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:28:08.834  INFO 6220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:28:08.966  INFO 6220 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:28:09.085  INFO 6220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:28:09.233  INFO 6220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:28:09.259  INFO 6220 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:28:10.349  INFO 6220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:28:10.361  INFO 6220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:28:12.018  WARN 6220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:28:12.390  INFO 6220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:28:12.568  INFO 6220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:28:13.422  INFO 6220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:28:13.426  INFO 6220 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.687 seconds (JVM running for 12.207)
+2020-05-20 23:28:28.386  INFO 6220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:28:28.386  INFO 6220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:28:28.408  INFO 6220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-05-20 23:28:28.452  INFO 6220 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:28:28.554  WARN 6220 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:28:28.569  WARN 6220 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:28:28.620  INFO 6220 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:29:05.485  INFO 1428 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 1428 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:29:05.494 DEBUG 1428 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:29:05.495  INFO 1428 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:29:06.952  INFO 1428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:29:07.132  INFO 1428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163ms. Found 7 JPA repository interfaces.
+2020-05-20 23:29:08.273  INFO 1428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:29:08.286  INFO 1428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:29:08.287  INFO 1428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:29:08.429  INFO 1428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:29:08.430  INFO 1428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2820 ms
+2020-05-20 23:29:08.794  INFO 1428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:29:08.876  INFO 1428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:29:09.029  INFO 1428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:29:09.150  INFO 1428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:29:09.307  INFO 1428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:29:09.327  INFO 1428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:29:10.524  INFO 1428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:29:10.534  INFO 1428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:29:12.123  WARN 1428 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:29:12.458  INFO 1428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:29:12.608  INFO 1428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:29:13.042  INFO 1428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:29:13.045  INFO 1428 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.229 seconds (JVM running for 10.804)
+2020-05-20 23:29:19.795  INFO 1428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:29:19.796  INFO 1428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:29:19.820  INFO 1428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-05-20 23:29:19.888  INFO 1428 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:29:20.077  WARN 1428 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:29:20.098  WARN 1428 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:29:20.147  INFO 1428 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:30:08.250  INFO 5508 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5508 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:30:08.256 DEBUG 5508 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:30:08.256  INFO 5508 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:30:09.344  INFO 5508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:30:09.507  INFO 5508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147ms. Found 7 JPA repository interfaces.
+2020-05-20 23:30:10.434  INFO 5508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:30:10.447  INFO 5508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:30:10.447  INFO 5508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:30:10.636  INFO 5508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:30:10.636  INFO 5508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2262 ms
+2020-05-20 23:30:10.977  INFO 5508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:30:11.048  INFO 5508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:30:11.175  INFO 5508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:30:11.307  INFO 5508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:30:11.473  INFO 5508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:30:11.493  INFO 5508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:30:12.521  INFO 5508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:30:12.530  INFO 5508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:30:13.892  WARN 5508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:30:14.214  INFO 5508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:30:14.351  INFO 5508 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:30:14.770  INFO 5508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:30:14.774  INFO 5508 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.93 seconds (JVM running for 9.317)
+2020-05-20 23:30:22.065  INFO 5508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:30:22.066  INFO 5508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:30:22.096  INFO 5508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-05-20 23:30:22.169  INFO 5508 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:30:22.346  WARN 5508 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:30:22.366  WARN 5508 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:30:22.420  INFO 5508 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:31:52.939  INFO 6976 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6976 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:31:52.939 DEBUG 6976 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:31:52.939  INFO 6976 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:31:53.877  INFO 6976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:31:54.017  INFO 6976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126ms. Found 7 JPA repository interfaces.
+2020-05-20 23:31:54.931  INFO 6976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:31:54.946  INFO 6976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:31:54.946  INFO 6976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:31:55.056  INFO 6976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:31:55.056  INFO 6976 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2039 ms
+2020-05-20 23:31:55.391  INFO 6976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:31:55.453  INFO 6976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:31:55.594  INFO 6976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:31:55.712  INFO 6976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:31:55.837  INFO 6976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:31:55.852  INFO 6976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:31:56.951  INFO 6976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:31:56.966  INFO 6976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:31:58.398  WARN 6976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:31:58.706  INFO 6976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:31:58.831  INFO 6976 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:31:59.229  INFO 6976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:31:59.229  INFO 6976 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.862 seconds (JVM running for 9.231)
+2020-05-20 23:32:05.146  INFO 6976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:32:05.147  INFO 6976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:32:05.169  INFO 6976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-05-20 23:32:05.212  INFO 6976 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:32:05.331  WARN 6976 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:32:05.352  WARN 6976 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:32:05.417  INFO 6976 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:32:05.772 ERROR 6976 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: (Line = 27, Column = 1) Incomplete structure: "<nav  th:fragment="menu(n)" class="header" style="position: sticky;top: 0px;z-index: 99;>
+  <div class="headernav">
+    <h2 class="logo">二进制桉</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="iconfont icon-menu-fill"></i>
+    </label>
+    <div class="right m-item item m-mobile-hide">
+      <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <div class="ui icon inverted transparent input menu-item-search" id="searchId">
+          <input type="text" name="query" id="searchinput" placeholder="Search...."  th:value="${query}">
+          <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+        </div>
+      </form>
+    </div>
+    <ul class="menunav">
+      <a href="#" class="menu-item-home" th:href="@{/}"  th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" class="menu-item-categories" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+      <a href="#" class="menu-item-tags" th:href="@{/tag/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+      <a href="#" class="menu-item-archives" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+      <a href="#" class="menu-item-about" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="iconfont icon-close"></i>
+      </label>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-bottom">
+  <div class="ui center aligned container">
+    <div class="ui inverted divided stackable grid">
+      <div class="three wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced menu-item-friends" >友情链接</h4>
+        <div class="ui inverted link list ">
+          <a href="#" th:href="${link.url}" target="_blank" class="item m-text-thin" th:each="link : ${links}" th:text="${link.name}">测试文字</a>
+          
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item m-text-thin">Email：wucx0402@163.com</a>
+          <a href="#" class="item m-text-thin">QQ：1791282006</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Eucalyptus CnTech by Wuchenxu</p>
+        <a href="http://www.beian.miit.gov.cn" >工信部</a><span>:冀ICP备20006446号-1</span>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/gh/Amado-github/live2d-widget@8.2/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+  <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+  <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script type='text/javascript' src='https://api88.net/api/play/js/?id=453175619&type=song&music=netease&fixed=true&autoplay=true&theme=f1c40f'></script>
+  <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+  </script>
+</th:block>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 58 common frames omitted
+
+2020-05-20 23:32:05.781 ERROR 6976 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)] with root cause
+
+org.attoparser.ParseException: (Line = 27, Column = 1) Incomplete structure: "<nav  th:fragment="menu(n)" class="header" style="position: sticky;top: 0px;z-index: 99;>
+  <div class="headernav">
+    <h2 class="logo">二进制桉</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="iconfont icon-menu-fill"></i>
+    </label>
+    <div class="right m-item item m-mobile-hide">
+      <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <div class="ui icon inverted transparent input menu-item-search" id="searchId">
+          <input type="text" name="query" id="searchinput" placeholder="Search...."  th:value="${query}">
+          <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+        </div>
+      </form>
+    </div>
+    <ul class="menunav">
+      <a href="#" class="menu-item-home" th:href="@{/}"  th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" class="menu-item-categories" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+      <a href="#" class="menu-item-tags" th:href="@{/tag/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+      <a href="#" class="menu-item-archives" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+      <a href="#" class="menu-item-about" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="iconfont icon-close"></i>
+      </label>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-bottom">
+  <div class="ui center aligned container">
+    <div class="ui inverted divided stackable grid">
+      <div class="three wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced menu-item-friends" >友情链接</h4>
+        <div class="ui inverted link list ">
+          <a href="#" th:href="${link.url}" target="_blank" class="item m-text-thin" th:each="link : ${links}" th:text="${link.name}">测试文字</a>
+          
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item m-text-thin">Email：wucx0402@163.com</a>
+          <a href="#" class="item m-text-thin">QQ：1791282006</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Eucalyptus CnTech by Wuchenxu</p>
+        <a href="http://www.beian.miit.gov.cn" >工信部</a><span>:冀ICP备20006446号-1</span>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/gh/Amado-github/live2d-widget@8.2/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+  <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+  <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script type='text/javascript' src='https://api88.net/api/play/js/?id=453175619&type=song&music=netease&fixed=true&autoplay=true&theme=f1c40f'></script>
+  <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+  </script>
+</th:block>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-05-20 23:32:05.811 ERROR 6976 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error/500": An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.attoparser.ParseException: (Line = 27, Column = 1) Incomplete structure: "<nav  th:fragment="menu(n)" class="header" style="position: sticky;top: 0px;z-index: 99;>
+  <div class="headernav">
+    <h2 class="logo">二进制桉</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="iconfont icon-menu-fill"></i>
+    </label>
+    <div class="right m-item item m-mobile-hide">
+      <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <div class="ui icon inverted transparent input menu-item-search" id="searchId">
+          <input type="text" name="query" id="searchinput" placeholder="Search...."  th:value="${query}">
+          <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+        </div>
+      </form>
+    </div>
+    <ul class="menunav">
+      <a href="#" class="menu-item-home" th:href="@{/}"  th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" class="menu-item-categories" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+      <a href="#" class="menu-item-tags" th:href="@{/tag/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+      <a href="#" class="menu-item-archives" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+      <a href="#" class="menu-item-about" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="iconfont icon-close"></i>
+      </label>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-bottom">
+  <div class="ui center aligned container">
+    <div class="ui inverted divided stackable grid">
+      <div class="three wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced menu-item-friends" >友情链接</h4>
+        <div class="ui inverted link list ">
+          <a href="#" th:href="${link.url}" target="_blank" class="item m-text-thin" th:each="link : ${links}" th:text="${link.name}">测试文字</a>
+          
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item m-text-thin">Email：wucx0402@163.com</a>
+          <a href="#" class="item m-text-thin">QQ：1791282006</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Eucalyptus CnTech by Wuchenxu</p>
+        <a href="http://www.beian.miit.gov.cn" >工信部</a><span>:冀ICP备20006446号-1</span>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/gh/Amado-github/live2d-widget@8.2/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+  <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+  <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script type='text/javascript' src='https://api88.net/api/play/js/?id=453175619&type=song&music=netease&fixed=true&autoplay=true&theme=f1c40f'></script>
+  <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+  </script>
+</th:block>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 47 common frames omitted
+
+2020-05-20 23:32:05.814 ERROR 6976 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.attoparser.ParseException: (Line = 27, Column = 1) Incomplete structure: "<nav  th:fragment="menu(n)" class="header" style="position: sticky;top: 0px;z-index: 99;>
+  <div class="headernav">
+    <h2 class="logo">二进制桉</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="iconfont icon-menu-fill"></i>
+    </label>
+    <div class="right m-item item m-mobile-hide">
+      <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <div class="ui icon inverted transparent input menu-item-search" id="searchId">
+          <input type="text" name="query" id="searchinput" placeholder="Search...."  th:value="${query}">
+          <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+        </div>
+      </form>
+    </div>
+    <ul class="menunav">
+      <a href="#" class="menu-item-home" th:href="@{/}"  th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" class="menu-item-categories" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+      <a href="#" class="menu-item-tags" th:href="@{/tag/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+      <a href="#" class="menu-item-archives" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+      <a href="#" class="menu-item-about" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="iconfont icon-close"></i>
+      </label>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-bottom">
+  <div class="ui center aligned container">
+    <div class="ui inverted divided stackable grid">
+      <div class="three wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced menu-item-friends" >友情链接</h4>
+        <div class="ui inverted link list ">
+          <a href="#" th:href="${link.url}" target="_blank" class="item m-text-thin" th:each="link : ${links}" th:text="${link.name}">测试文字</a>
+          
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item m-text-thin">Email：wucx0402@163.com</a>
+          <a href="#" class="item m-text-thin">QQ：1791282006</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Eucalyptus CnTech by Wuchenxu</p>
+        <a href="http://www.beian.miit.gov.cn" >工信部</a><span>:冀ICP备20006446号-1</span>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/gh/Amado-github/live2d-widget@8.2/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+  <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+  <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script type='text/javascript' src='https://api88.net/api/play/js/?id=453175619&type=song&music=netease&fixed=true&autoplay=true&theme=f1c40f'></script>
+  <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+  </script>
+</th:block>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-05-20 23:32:05.820 ERROR 6976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/_fragments.html]" - line 27, col 1)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 26 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 27, Column = 1) Incomplete structure: "<nav  th:fragment="menu(n)" class="header" style="position: sticky;top: 0px;z-index: 99;>
+  <div class="headernav">
+    <h2 class="logo">二进制桉</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="iconfont icon-menu-fill"></i>
+    </label>
+    <div class="right m-item item m-mobile-hide">
+      <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <div class="ui icon inverted transparent input menu-item-search" id="searchId">
+          <input type="text" name="query" id="searchinput" placeholder="Search...."  th:value="${query}">
+          <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+        </div>
+      </form>
+    </div>
+    <ul class="menunav">
+      <a href="#" class="menu-item-home" th:href="@{/}"  th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+      <a href="#" class="menu-item-categories" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+      <a href="#" class="menu-item-tags" th:href="@{/tag/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+      <a href="#" class="menu-item-archives" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+      <a href="#" class="menu-item-about" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="iconfont icon-close"></i>
+      </label>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-bottom">
+  <div class="ui center aligned container">
+    <div class="ui inverted divided stackable grid">
+      <div class="three wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced menu-item-friends" >友情链接</h4>
+        <div class="ui inverted link list ">
+          <a href="#" th:href="${link.url}" target="_blank" class="item m-text-thin" th:each="link : ${links}" th:text="${link.name}">测试文字</a>
+          
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+        <div class="ui inverted link list">
+          <a href="#" class="item m-text-thin">Email：wucx0402@163.com</a>
+          <a href="#" class="item m-text-thin">QQ：1791282006</a>
+        </div>
+      </div>
+      <div class="seven wide column">
+        <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Eucalyptus CnTech by Wuchenxu</p>
+        <a href="http://www.beian.miit.gov.cn" >工信部</a><span>:冀ICP备20006446号-1</span>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/gh/Amado-github/live2d-widget@8.2/autoload.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+  <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+  <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script type='text/javascript' src='https://api88.net/api/play/js/?id=453175619&type=song&music=netease&fixed=true&autoplay=true&theme=f1c40f'></script>
+  <script>
+      (function(){
+          var bp = document.createElement('script');
+          var curProtocol = window.location.protocol.split(':')[0];
+          if (curProtocol === 'https') {
+              bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+          }
+          else {
+              bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+          }
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(bp, s);
+      })();
+  </script>
+</th:block>
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 47 common frames omitted
+
+2020-05-20 23:33:22.852  INFO 3728 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3728 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:33:22.859 DEBUG 3728 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:33:22.860  INFO 3728 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:33:24.021  INFO 3728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:33:24.162  INFO 3728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 7 JPA repository interfaces.
+2020-05-20 23:33:25.089  INFO 3728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:33:25.099  INFO 3728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:33:25.099  INFO 3728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:33:25.249  INFO 3728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:33:25.249  INFO 3728 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2287 ms
+2020-05-20 23:33:25.573  INFO 3728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:33:25.649  INFO 3728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:33:25.809  INFO 3728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:33:25.979  INFO 3728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:33:26.135  INFO 3728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:33:26.155  INFO 3728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:33:27.211  INFO 3728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:33:27.221  INFO 3728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:33:28.737  WARN 3728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:33:29.029  INFO 3728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:33:29.165  INFO 3728 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:33:29.535  INFO 3728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:33:29.535  INFO 3728 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.016 seconds (JVM running for 9.358)
+2020-05-20 23:33:36.473  INFO 3728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:33:36.474  INFO 3728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:33:36.492  INFO 3728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-20 23:33:36.540  INFO 3728 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:33:36.654  WARN 3728 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:33:36.668  WARN 3728 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:33:36.715  INFO 3728 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:33:51.135  INFO 3728 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:33:51.158  INFO 3728 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-20 23:34:45.837  INFO 5760 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5760 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-20 23:34:45.867 DEBUG 5760 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-20 23:34:45.868  INFO 5760 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-20 23:34:46.925  INFO 5760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-20 23:34:47.065  INFO 5760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 7 JPA repository interfaces.
+2020-05-20 23:34:47.971  INFO 5760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:34:47.981  INFO 5760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-20 23:34:47.991  INFO 5760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-20 23:34:48.166  INFO 5760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-20 23:34:48.166  INFO 5760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2200 ms
+2020-05-20 23:34:48.525  INFO 5760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-20 23:34:48.596  INFO 5760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-20 23:34:48.726  INFO 5760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-20 23:34:48.842  INFO 5760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-20 23:34:48.982  INFO 5760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-20 23:34:49.012  INFO 5760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-20 23:34:50.109  INFO 5760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-20 23:34:50.119  INFO 5760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-20 23:34:51.530  WARN 5760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-20 23:34:51.878  INFO 5760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:34:52.007  INFO 5760 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-20 23:34:52.399  INFO 5760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:34:52.400  INFO 5760 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.93 seconds (JVM running for 9.334)
+2020-05-20 23:35:00.843  INFO 5760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:35:00.843  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:35:00.861  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-05-20 23:35:00.904  INFO 5760 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-20 23:35:01.028  WARN 5760 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:35:01.046  WARN 5760 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-20 23:35:01.106  INFO 5760 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index

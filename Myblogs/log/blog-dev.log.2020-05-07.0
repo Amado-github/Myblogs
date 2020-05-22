@@ -1,0 +1,1094 @@
+2020-05-07 18:01:18.225  INFO 3948 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3948 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:01:18.283 DEBUG 3948 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:01:18.283  INFO 3948 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:01:22.144  INFO 3948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:01:22.619  INFO 3948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 406ms. Found 6 JPA repository interfaces.
+2020-05-07 18:01:25.238  INFO 3948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:01:25.298  INFO 3948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:01:25.298  INFO 3948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:01:25.727  INFO 3948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:01:25.728  INFO 3948 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7100 ms
+2020-05-07 18:01:26.792  INFO 3948 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:01:27.345  INFO 3948 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:01:28.304  INFO 3948 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:01:28.875  INFO 3948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:01:29.428  INFO 3948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:01:29.594  INFO 3948 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:01:33.381  INFO 3948 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:01:33.405  INFO 3948 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:01:36.260  WARN 3948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:01:36.827  INFO 3948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:01:37.052  INFO 3948 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:01:37.858  INFO 3948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:01:37.862  INFO 3948 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 23.138 seconds (JVM running for 28.646)
+2020-05-07 18:01:47.555  INFO 3948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:01:47.556  INFO 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:01:47.589  INFO 3948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-05-07 18:01:47.809  INFO 3948 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:01:48.106  WARN 3948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:01:48.128  WARN 3948 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:01:48.260  INFO 3948 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:07:08.583  INFO 4836 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 4836 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:07:08.588 DEBUG 4836 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:07:08.589  INFO 4836 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:07:09.674  INFO 4836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:07:09.843  INFO 4836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 6 JPA repository interfaces.
+2020-05-07 18:07:11.127  INFO 4836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:07:11.147  INFO 4836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:07:11.147  INFO 4836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:07:11.452  INFO 4836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:07:11.452  INFO 4836 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2799 ms
+2020-05-07 18:07:12.150  INFO 4836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:07:12.359  INFO 4836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:07:12.737  INFO 4836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:07:13.098  INFO 4836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:07:13.470  INFO 4836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:07:13.516  INFO 4836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:07:16.088  INFO 4836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:07:16.114  INFO 4836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:07:19.532  WARN 4836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:07:20.294  INFO 4836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:07:20.655  INFO 4836 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:07:21.522  INFO 4836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:07:21.530  INFO 4836 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 16.66 seconds (JVM running for 19.025)
+2020-05-07 18:08:15.627  INFO 4836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:08:15.629  INFO 4836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:08:15.691  INFO 4836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 61 ms
+2020-05-07 18:08:15.839  INFO 4836 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:08:16.139  WARN 4836 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:08:16.185  WARN 4836 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:08:16.298  INFO 4836 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:09:30.919  INFO 6064 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6064 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:09:30.926 DEBUG 6064 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:09:30.927  INFO 6064 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:09:32.440  INFO 6064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:09:32.692  INFO 6064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216ms. Found 6 JPA repository interfaces.
+2020-05-07 18:09:34.389  INFO 6064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:09:34.412  INFO 6064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:09:34.414  INFO 6064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:09:34.663  INFO 6064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:09:34.663  INFO 6064 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3636 ms
+2020-05-07 18:09:35.196  INFO 6064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:09:35.339  INFO 6064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:09:35.576  INFO 6064 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:09:35.793  INFO 6064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:09:36.015  INFO 6064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:09:36.055  INFO 6064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:09:38.350  INFO 6064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:09:38.362  INFO 6064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:09:40.777  WARN 6064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:09:41.325  INFO 6064 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:09:41.591  INFO 6064 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:09:42.225  INFO 6064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:09:42.235  INFO 6064 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 13.688 seconds (JVM running for 16.011)
+2020-05-07 18:10:27.361  INFO 6064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:10:27.362  INFO 6064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:10:27.401  INFO 6064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2020-05-07 18:10:27.485  INFO 6064 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:10:27.638  WARN 6064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:10:27.675  WARN 6064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:10:27.746  INFO 6064 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:11:37.607  INFO 5044 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5044 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:11:37.612 DEBUG 5044 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:11:37.613  INFO 5044 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:11:39.523  INFO 5044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:11:39.829  INFO 5044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282ms. Found 6 JPA repository interfaces.
+2020-05-07 18:11:41.612  INFO 5044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:11:41.631  INFO 5044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:11:41.632  INFO 5044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:11:41.849  INFO 5044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:11:41.850  INFO 5044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4142 ms
+2020-05-07 18:11:42.328  INFO 5044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:11:42.444  INFO 5044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:11:42.666  INFO 5044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:11:42.834  INFO 5044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:11:43.056  INFO 5044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:11:43.090  INFO 5044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:11:44.826  INFO 5044 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:11:44.839  INFO 5044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:11:46.931  WARN 5044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:11:47.378  INFO 5044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:11:47.538  INFO 5044 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:11:48.128  INFO 5044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:11:48.130  INFO 5044 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 12.019 seconds (JVM running for 13.977)
+2020-05-07 18:11:53.133  INFO 5044 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:11:53.135  INFO 5044 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:11:53.161  INFO 5044 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-05-07 18:11:53.226  INFO 5044 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:11:53.400  WARN 5044 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:11:53.421  WARN 5044 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:11:53.484  INFO 5044 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:14:02.856  INFO 5688 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5688 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:14:02.860 DEBUG 5688 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:14:02.861  INFO 5688 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:14:05.325  INFO 5688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:14:05.445  INFO 5688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 6 JPA repository interfaces.
+2020-05-07 18:14:06.351  INFO 5688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:14:06.363  INFO 5688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:14:06.364  INFO 5688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:14:06.513  INFO 5688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:14:06.513  INFO 5688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3422 ms
+2020-05-07 18:14:06.868  INFO 5688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:14:06.941  INFO 5688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:14:07.076  INFO 5688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:14:07.192  INFO 5688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:14:07.341  INFO 5688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:14:07.365  INFO 5688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:14:08.376  INFO 5688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:14:08.385  INFO 5688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:14:09.689  WARN 5688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:14:09.978  INFO 5688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:14:10.111  INFO 5688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:14:10.515  INFO 5688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:14:10.518  INFO 5688 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.633 seconds (JVM running for 9.891)
+2020-05-07 18:14:24.588  INFO 5688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:14:24.588  INFO 5688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:14:24.607  INFO 5688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-05-07 18:14:24.654  INFO 5688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:14:24.774  WARN 5688 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:14:24.791  WARN 5688 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:14:24.844  INFO 5688 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:15:20.303  INFO 5164 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5164 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:15:20.308 DEBUG 5164 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:15:20.308  INFO 5164 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:15:21.554  INFO 5164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:15:21.726  INFO 5164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 6 JPA repository interfaces.
+2020-05-07 18:15:22.810  INFO 5164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:15:22.822  INFO 5164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:15:22.823  INFO 5164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:15:23.005  INFO 5164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:15:23.006  INFO 5164 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2594 ms
+2020-05-07 18:15:23.361  INFO 5164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:15:23.440  INFO 5164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:15:23.582  INFO 5164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:15:23.694  INFO 5164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:15:23.836  INFO 5164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:15:23.858  INFO 5164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:15:24.896  INFO 5164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:15:24.904  INFO 5164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:15:26.170  WARN 5164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:15:26.471  INFO 5164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:15:26.612  INFO 5164 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:15:27.008  INFO 5164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:15:27.011  INFO 5164 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.975 seconds (JVM running for 9.22)
+2020-05-07 18:15:36.779  INFO 5164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:15:36.780  INFO 5164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:15:36.795  INFO 5164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-05-07 18:15:36.838  INFO 5164 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:15:36.951  WARN 5164 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:15:36.965  WARN 5164 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:15:37.013  INFO 5164 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:16:39.038  INFO 3360 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3360 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:16:39.044 DEBUG 3360 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:16:39.044  INFO 3360 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:16:40.022  INFO 3360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:16:40.170  INFO 3360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 6 JPA repository interfaces.
+2020-05-07 18:16:41.052  INFO 3360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:16:41.063  INFO 3360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:16:41.064  INFO 3360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:16:41.259  INFO 3360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:16:41.259  INFO 3360 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2124 ms
+2020-05-07 18:16:41.614  INFO 3360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:16:41.688  INFO 3360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:16:41.820  INFO 3360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:16:41.930  INFO 3360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:16:42.074  INFO 3360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:16:42.093  INFO 3360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:16:43.162  INFO 3360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:16:43.171  INFO 3360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:16:44.452  WARN 3360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:16:44.738  INFO 3360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:16:44.874  INFO 3360 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:16:45.238  INFO 3360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:16:45.241  INFO 3360 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.847 seconds (JVM running for 9.284)
+2020-05-07 18:16:50.741  INFO 3360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:16:50.742  INFO 3360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:16:50.758  INFO 3360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-05-07 18:16:50.805  INFO 3360 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:16:51.034  WARN 3360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:16:51.059  WARN 3360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:16:51.125  INFO 3360 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:18:09.466  INFO 2420 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 2420 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:18:09.472 DEBUG 2420 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:18:09.506  INFO 2420 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:18:11.173  INFO 2420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:18:11.389  INFO 2420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177ms. Found 6 JPA repository interfaces.
+2020-05-07 18:18:12.496  INFO 2420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:18:12.513  INFO 2420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:18:12.514  INFO 2420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:18:12.698  INFO 2420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:18:12.698  INFO 2420 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2827 ms
+2020-05-07 18:18:13.105  INFO 2420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:18:13.190  INFO 2420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:18:13.378  INFO 2420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:18:13.490  INFO 2420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:18:13.649  INFO 2420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:18:13.672  INFO 2420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:18:14.795  INFO 2420 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:18:14.804  INFO 2420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:18:16.217  WARN 2420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:18:16.525  INFO 2420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:18:16.682  INFO 2420 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:18:17.076  INFO 2420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:18:17.080  INFO 2420 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.281 seconds (JVM running for 10.76)
+2020-05-07 18:18:44.504  INFO 2420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:18:44.504  INFO 2420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:18:44.523  INFO 2420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-05-07 18:18:44.569  INFO 2420 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:18:44.691  WARN 2420 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:18:44.707  WARN 2420 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:18:44.748  INFO 2420 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:20:19.794  INFO 5460 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5460 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:20:19.799 DEBUG 5460 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:20:19.800  INFO 5460 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:20:22.048  INFO 5460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:20:22.416  INFO 5460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 338ms. Found 6 JPA repository interfaces.
+2020-05-07 18:20:24.315  INFO 5460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:20:24.336  INFO 5460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:20:24.336  INFO 5460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:20:24.612  INFO 5460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:20:24.613  INFO 5460 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4370 ms
+2020-05-07 18:20:25.158  INFO 5460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:20:25.296  INFO 5460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:20:25.561  INFO 5460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:20:25.773  INFO 5460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:20:26.027  INFO 5460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:20:26.059  INFO 5460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:20:27.873  INFO 5460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:20:27.891  INFO 5460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:20:30.343  WARN 5460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:20:30.864  INFO 5460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:20:31.144  INFO 5460 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:20:31.836  INFO 5460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:20:31.843  INFO 5460 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 13.429 seconds (JVM running for 15.677)
+2020-05-07 18:20:42.595  INFO 5460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:20:42.596  INFO 5460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:20:42.626  INFO 5460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-05-07 18:20:42.715  INFO 5460 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:20:42.882  WARN 5460 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:20:42.902  WARN 5460 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:20:42.956  INFO 5460 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:21:47.190  INFO 3424 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3424 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:21:47.195 DEBUG 3424 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:21:47.195  INFO 3424 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:21:49.726  INFO 3424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:21:49.936  INFO 3424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190ms. Found 6 JPA repository interfaces.
+2020-05-07 18:21:51.435  INFO 3424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:21:51.460  INFO 3424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:21:51.460  INFO 3424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:21:51.744  INFO 3424 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:21:51.744  INFO 3424 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4459 ms
+2020-05-07 18:21:52.385  INFO 3424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:21:52.633  INFO 3424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:21:52.899  INFO 3424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:21:53.164  INFO 3424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:21:53.474  INFO 3424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:21:53.515  INFO 3424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:21:55.240  INFO 3424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:21:55.255  INFO 3424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:21:57.344  WARN 3424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:21:57.799  INFO 3424 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:21:58.007  INFO 3424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:21:58.620  INFO 3424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:21:58.626  INFO 3424 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 12.987 seconds (JVM running for 15.197)
+2020-05-07 18:22:25.710  INFO 3424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:22:25.710  INFO 3424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:22:25.739  INFO 3424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-05-07 18:22:25.823  INFO 3424 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:22:26.006  WARN 3424 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:22:26.029  WARN 3424 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:22:26.100  INFO 3424 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:23:31.452  INFO 4268 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 4268 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:23:31.484 DEBUG 4268 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:23:31.485  INFO 4268 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:23:33.057  INFO 4268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:23:33.205  INFO 4268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 6 JPA repository interfaces.
+2020-05-07 18:23:34.226  INFO 4268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:23:34.238  INFO 4268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:23:34.238  INFO 4268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:23:34.379  INFO 4268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:23:34.379  INFO 4268 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2505 ms
+2020-05-07 18:23:34.751  INFO 4268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:23:34.824  INFO 4268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:23:34.961  INFO 4268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:23:35.067  INFO 4268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:23:35.210  INFO 4268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:23:35.230  INFO 4268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:23:36.246  INFO 4268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:23:36.255  INFO 4268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:23:37.564  WARN 4268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:23:37.892  INFO 4268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:23:38.031  INFO 4268 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:23:38.410  INFO 4268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:23:38.413  INFO 4268 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.82 seconds (JVM running for 9.42)
+2020-05-07 18:24:20.224  INFO 4268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:24:20.225  INFO 4268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:24:20.252  INFO 4268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-05-07 18:24:20.337  INFO 4268 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:24:20.530  WARN 4268 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:24:20.550  WARN 4268 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:24:20.610  INFO 4268 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:27:04.988  INFO 5992 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5992 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:27:04.992 DEBUG 5992 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:27:04.993  INFO 5992 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:27:06.147  INFO 5992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:27:06.293  INFO 5992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 6 JPA repository interfaces.
+2020-05-07 18:27:07.294  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:27:07.306  INFO 5992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:27:07.307  INFO 5992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:27:07.423  INFO 5992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:27:07.423  INFO 5992 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2360 ms
+2020-05-07 18:27:07.764  INFO 5992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:27:07.836  INFO 5992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:27:07.965  INFO 5992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:27:08.077  INFO 5992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:27:08.218  INFO 5992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:27:08.240  INFO 5992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:27:09.227  INFO 5992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:27:09.236  INFO 5992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:27:10.629  WARN 5992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:27:10.922  INFO 5992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:27:11.058  INFO 5992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:27:11.422  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:27:11.424  INFO 5992 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.739 seconds (JVM running for 8.929)
+2020-05-07 18:27:28.461  INFO 5992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:27:28.462  INFO 5992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:27:28.483  INFO 5992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-05-07 18:27:28.554  INFO 5992 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:27:28.728  WARN 5992 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:27:28.752  WARN 5992 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:27:28.810  INFO 5992 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:28:21.016  INFO 296 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 296 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:28:21.022 DEBUG 296 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:28:21.023  INFO 296 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:28:22.269  INFO 296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:28:22.433  INFO 296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148ms. Found 6 JPA repository interfaces.
+2020-05-07 18:28:23.707  INFO 296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:28:23.722  INFO 296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:28:23.723  INFO 296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:28:23.903  INFO 296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:28:23.904  INFO 296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2793 ms
+2020-05-07 18:28:24.380  INFO 296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:28:24.515  INFO 296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:28:24.716  INFO 296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:28:24.852  INFO 296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:28:25.036  INFO 296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:28:25.059  INFO 296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:28:26.419  INFO 296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:28:26.432  INFO 296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:28:28.113  WARN 296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:28:28.477  INFO 296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:28:28.659  INFO 296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:28:29.113  INFO 296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:28:29.116  INFO 296 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.638 seconds (JVM running for 12.562)
+2020-05-07 18:28:48.134  INFO 296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:28:48.135  INFO 296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:28:48.160  INFO 296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-05-07 18:28:48.230  INFO 296 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:28:48.406  WARN 296 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:28:48.428  WARN 296 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:28:48.480  INFO 296 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:30:31.845  INFO 1176 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 1176 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:30:31.853 DEBUG 1176 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:30:31.855  INFO 1176 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:30:34.039  INFO 1176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:30:34.236  INFO 1176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182ms. Found 6 JPA repository interfaces.
+2020-05-07 18:30:35.555  INFO 1176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:30:35.570  INFO 1176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:30:35.571  INFO 1176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:30:35.736  INFO 1176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:30:35.737  INFO 1176 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3160 ms
+2020-05-07 18:30:36.130  INFO 1176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:30:36.229  INFO 1176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:30:36.404  INFO 1176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:30:36.554  INFO 1176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:30:36.760  INFO 1176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:30:36.784  INFO 1176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:30:38.132  INFO 1176 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:30:38.144  INFO 1176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:30:39.891  WARN 1176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:30:40.295  INFO 1176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:30:40.477  INFO 1176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:30:40.945  INFO 1176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:30:40.949  INFO 1176 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.985 seconds (JVM running for 12.851)
+2020-05-07 18:30:45.345  INFO 1176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:30:45.346  INFO 1176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:30:45.372  INFO 1176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-05-07 18:30:45.434  INFO 1176 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:30:45.592  WARN 1176 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:30:45.612  WARN 1176 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:30:45.672  INFO 1176 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:32:03.383  INFO 5852 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5852 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:32:03.393 DEBUG 5852 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:32:03.395  INFO 5852 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:32:05.441  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:32:05.728  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260ms. Found 6 JPA repository interfaces.
+2020-05-07 18:32:06.990  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:32:07.006  INFO 5852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:32:07.007  INFO 5852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:32:07.196  INFO 5852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:32:07.197  INFO 5852 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3546 ms
+2020-05-07 18:32:07.641  INFO 5852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:32:07.733  INFO 5852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:32:07.923  INFO 5852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:32:08.066  INFO 5852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:32:08.256  INFO 5852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:32:08.281  INFO 5852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:32:09.657  INFO 5852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:32:09.670  INFO 5852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:32:11.411  WARN 5852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:32:11.808  INFO 5852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:32:11.981  INFO 5852 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:32:12.490  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:32:12.494  INFO 5852 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.746 seconds (JVM running for 12.567)
+2020-05-07 18:32:22.712  INFO 5852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:32:22.713  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:32:22.741  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-05-07 18:32:22.807  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:32:22.974  WARN 5852 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:32:22.993  WARN 5852 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:32:23.055  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:33:44.581  INFO 5064 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5064 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:33:44.588 DEBUG 5064 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:33:44.589  INFO 5064 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:33:46.313  INFO 5064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:33:46.538  INFO 5064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206ms. Found 6 JPA repository interfaces.
+2020-05-07 18:33:47.856  INFO 5064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:33:47.870  INFO 5064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:33:47.871  INFO 5064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:33:48.048  INFO 5064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:33:48.049  INFO 5064 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3097 ms
+2020-05-07 18:33:48.452  INFO 5064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:33:48.548  INFO 5064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:33:48.723  INFO 5064 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:33:48.858  INFO 5064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:33:49.045  INFO 5064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:33:49.068  INFO 5064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:33:50.421  INFO 5064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:33:50.434  INFO 5064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:33:52.108  WARN 5064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:33:52.482  INFO 5064 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:33:52.656  INFO 5064 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:33:53.100  INFO 5064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:33:53.104  INFO 5064 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.904 seconds (JVM running for 11.575)
+2020-05-07 18:34:00.723  INFO 5064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:34:00.724  INFO 5064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:34:00.751  INFO 5064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-05-07 18:34:00.814  INFO 5064 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:34:00.976  WARN 5064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:34:00.995  WARN 5064 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:34:01.056  INFO 5064 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:34:53.750  INFO 3092 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3092 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:34:53.777 DEBUG 3092 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:34:53.777  INFO 3092 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:34:55.883  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:34:56.167  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 255ms. Found 6 JPA repository interfaces.
+2020-05-07 18:34:58.169  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:34:58.192  INFO 3092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:34:58.193  INFO 3092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:34:58.501  INFO 3092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:34:58.504  INFO 3092 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4594 ms
+2020-05-07 18:34:59.094  INFO 3092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:34:59.239  INFO 3092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:34:59.489  INFO 3092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:34:59.705  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:34:59.994  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:35:00.027  INFO 3092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:35:02.199  INFO 3092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:35:02.223  INFO 3092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:35:04.935  WARN 3092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:35:05.387  INFO 3092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:35:05.552  INFO 3092 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:35:05.980  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:35:05.983  INFO 3092 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 14.791 seconds (JVM running for 17.874)
+2020-05-07 18:35:14.587  INFO 3092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:35:14.588  INFO 3092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:35:14.617  INFO 3092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-05-07 18:35:14.686  INFO 3092 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:35:14.849  WARN 3092 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:35:14.872  WARN 3092 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:35:14.884  INFO 3092 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:35:14.953  INFO 3092 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:35:14.954  INFO 3092 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:35:42.411  INFO 3092 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:35:42.433  INFO 3092 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:35:50.047  INFO 3092 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:35:50.069  INFO 3092 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:36:49.043  INFO 3092 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:36:49.061  INFO 3092 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:37:24.774  INFO 3092 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:37:24.790  INFO 3092 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:40:55.649  INFO 4532 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 4532 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:40:55.656 DEBUG 4532 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:40:55.656  INFO 4532 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:40:57.197  INFO 4532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:40:57.391  INFO 4532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176ms. Found 6 JPA repository interfaces.
+2020-05-07 18:40:58.732  INFO 4532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:40:58.749  INFO 4532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:40:58.750  INFO 4532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:40:59.110  INFO 4532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:40:59.110  INFO 4532 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3348 ms
+2020-05-07 18:40:59.600  INFO 4532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:40:59.705  INFO 4532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:40:59.867  INFO 4532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:41:00.001  INFO 4532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:41:00.202  INFO 4532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:41:00.232  INFO 4532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:41:01.481  INFO 4532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:41:01.491  INFO 4532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:41:03.126  WARN 4532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:41:03.586  INFO 4532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:41:03.781  INFO 4532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:41:04.376  INFO 4532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:41:04.380  INFO 4532 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.033 seconds (JVM running for 11.599)
+2020-05-07 18:41:07.134  INFO 4532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:41:07.134  INFO 4532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:41:07.152  INFO 4532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-07 18:41:07.202  INFO 4532 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:41:07.343  WARN 4532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:41:07.363  WARN 4532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:41:07.413  INFO 4532 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:42:03.112  INFO 5608 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5608 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:42:03.123 DEBUG 5608 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:42:03.124  INFO 5608 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:42:04.676  INFO 5608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:42:04.857  INFO 5608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164ms. Found 6 JPA repository interfaces.
+2020-05-07 18:42:06.051  INFO 5608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:42:06.067  INFO 5608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:42:06.067  INFO 5608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:42:06.368  INFO 5608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:42:06.368  INFO 5608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2818 ms
+2020-05-07 18:42:06.794  INFO 5608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:42:06.905  INFO 5608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:42:07.099  INFO 5608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:42:07.242  INFO 5608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:42:07.442  INFO 5608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:42:07.469  INFO 5608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:42:08.906  INFO 5608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:42:08.920  INFO 5608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:42:10.852  WARN 5608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:42:11.277  INFO 5608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:42:11.499  INFO 5608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:42:12.019  INFO 5608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:42:12.023  INFO 5608 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.814 seconds (JVM running for 12.586)
+2020-05-07 18:42:14.796  INFO 5608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:42:14.798  INFO 5608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:42:14.830  INFO 5608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-05-07 18:42:14.923  INFO 5608 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:42:15.118  WARN 5608 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:42:15.143  WARN 5608 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:42:15.212  INFO 5608 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:42:41.244  INFO 5608 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:42:41.284  INFO 5608 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:45:46.307  INFO 6636 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6636 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:45:46.316 DEBUG 6636 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:45:46.317  INFO 6636 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:45:48.279  INFO 6636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:45:48.615  INFO 6636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310ms. Found 6 JPA repository interfaces.
+2020-05-07 18:45:50.597  INFO 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:45:50.628  INFO 6636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:45:50.629  INFO 6636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:45:50.933  INFO 6636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:45:50.934  INFO 6636 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4455 ms
+2020-05-07 18:45:51.625  INFO 6636 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:45:51.810  INFO 6636 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:45:52.160  INFO 6636 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:45:52.434  INFO 6636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:45:52.767  INFO 6636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:45:52.815  INFO 6636 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:45:55.238  INFO 6636 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:45:55.252  INFO 6636 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:45:58.086  WARN 6636 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:45:59.032  INFO 6636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:45:59.362  INFO 6636 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:46:00.231  INFO 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:46:00.235  INFO 6636 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 15.545 seconds (JVM running for 17.724)
+2020-05-07 18:46:03.970  INFO 6636 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:46:03.973  INFO 6636 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:46:04.013  INFO 6636 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2020-05-07 18:46:04.118  INFO 6636 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:46:04.393  WARN 6636 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:46:04.418  WARN 6636 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:46:04.491  INFO 6636 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:46:51.433  INFO 6992 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6992 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:46:51.439 DEBUG 6992 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:46:51.440  INFO 6992 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:46:53.274  INFO 6992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:46:53.584  INFO 6992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 293ms. Found 6 JPA repository interfaces.
+2020-05-07 18:46:55.667  INFO 6992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:46:55.699  INFO 6992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:46:55.700  INFO 6992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:46:55.927  INFO 6992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:46:55.927  INFO 6992 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4244 ms
+2020-05-07 18:46:56.423  INFO 6992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:46:56.539  INFO 6992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:46:56.796  INFO 6992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:46:56.993  INFO 6992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:46:57.270  INFO 6992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:46:57.305  INFO 6992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:46:59.121  INFO 6992 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:46:59.141  INFO 6992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:47:01.510  WARN 6992 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:47:02.004  INFO 6992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:47:02.266  INFO 6992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:47:02.918  INFO 6992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:47:02.921  INFO 6992 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 12.625 seconds (JVM running for 14.718)
+2020-05-07 18:48:42.025  INFO 6992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:48:42.026  INFO 6992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:48:42.059  INFO 6992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-05-07 18:48:42.121  INFO 6992 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:48:42.302  WARN 6992 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:48:42.325  WARN 6992 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:48:42.394  INFO 6992 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:51:04.969  INFO 6740 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6740 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:51:04.972 DEBUG 6740 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:51:04.972  INFO 6740 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:51:05.917  INFO 6740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:51:06.038  INFO 6740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 6 JPA repository interfaces.
+2020-05-07 18:51:06.958  INFO 6740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:51:06.971  INFO 6740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:51:06.972  INFO 6740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:51:07.127  INFO 6740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:51:07.127  INFO 6740 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2097 ms
+2020-05-07 18:51:07.456  INFO 6740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:51:07.532  INFO 6740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:51:07.668  INFO 6740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:51:07.778  INFO 6740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:51:07.921  INFO 6740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:51:07.941  INFO 6740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:51:08.967  INFO 6740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:51:08.976  INFO 6740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:51:10.297  WARN 6740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:51:10.588  INFO 6740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:51:10.728  INFO 6740 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:51:11.094  INFO 6740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:51:11.097  INFO 6740 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.118 seconds (JVM running for 9.381)
+2020-05-07 18:51:29.811  INFO 6740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:51:29.811  INFO 6740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:51:29.827  INFO 6740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-05-07 18:51:29.871  INFO 6740 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:51:29.985  WARN 6740 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:51:30.000  WARN 6740 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:51:30.045  INFO 6740 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:52:05.924  INFO 4748 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 4748 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:52:05.928 DEBUG 4748 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:52:05.929  INFO 4748 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:52:07.183  INFO 4748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:52:07.366  INFO 4748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165ms. Found 6 JPA repository interfaces.
+2020-05-07 18:52:08.288  INFO 4748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:52:08.303  INFO 4748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:52:08.304  INFO 4748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:52:08.473  INFO 4748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:52:08.474  INFO 4748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2449 ms
+2020-05-07 18:52:08.829  INFO 4748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:52:08.902  INFO 4748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:52:09.030  INFO 4748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:52:09.137  INFO 4748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:52:09.277  INFO 4748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:52:09.296  INFO 4748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:52:10.332  INFO 4748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:52:10.340  INFO 4748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:52:11.635  WARN 4748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:52:11.926  INFO 4748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:52:12.059  INFO 4748 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:52:12.443  INFO 4748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:52:12.445  INFO 4748 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.036 seconds (JVM running for 9.489)
+2020-05-07 18:52:37.293  INFO 4748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:52:37.294  INFO 4748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:52:37.309  INFO 4748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-05-07 18:52:37.351  INFO 4748 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:52:37.470  WARN 4748 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:52:37.484  WARN 4748 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:52:37.531  INFO 4748 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:53:17.841  INFO 4748 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:53:17.861  INFO 4748 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:53:45.677  INFO 4748 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:53:45.700  INFO 4748 --- [http-nio-8080-exec-6] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:56:19.708  INFO 6384 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6384 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:56:19.713 DEBUG 6384 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:56:19.713  INFO 6384 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:56:20.708  INFO 6384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:56:20.853  INFO 6384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 6 JPA repository interfaces.
+2020-05-07 18:56:21.790  INFO 6384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:56:21.803  INFO 6384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:56:21.803  INFO 6384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:56:21.942  INFO 6384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:56:21.943  INFO 6384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2153 ms
+2020-05-07 18:56:22.272  INFO 6384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:56:22.344  INFO 6384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:56:22.475  INFO 6384 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:56:22.583  INFO 6384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:56:22.727  INFO 6384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:56:22.746  INFO 6384 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:56:23.852  INFO 6384 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:56:23.864  INFO 6384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:56:25.471  WARN 6384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:56:25.765  INFO 6384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:56:25.909  INFO 6384 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:56:26.296  INFO 6384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:56:26.299  INFO 6384 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.175 seconds (JVM running for 9.617)
+2020-05-07 18:57:10.007  INFO 6384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 18:57:10.007  INFO 6384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 18:57:10.024  INFO 6384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-05-07 18:57:10.072  INFO 6384 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 18:57:10.215  WARN 6384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:57:10.232  WARN 6384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 18:57:10.279  INFO 6384 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 18:59:08.401  INFO 6288 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6288 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 18:59:08.406 DEBUG 6288 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 18:59:08.407  INFO 6288 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 18:59:09.421  INFO 6288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 18:59:09.572  INFO 6288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136ms. Found 6 JPA repository interfaces.
+2020-05-07 18:59:10.513  INFO 6288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 18:59:10.524  INFO 6288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 18:59:10.525  INFO 6288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 18:59:10.684  INFO 6288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 18:59:10.685  INFO 6288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2194 ms
+2020-05-07 18:59:11.012  INFO 6288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 18:59:11.084  INFO 6288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 18:59:11.221  INFO 6288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 18:59:11.328  INFO 6288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 18:59:11.470  INFO 6288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 18:59:11.490  INFO 6288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 18:59:12.514  INFO 6288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 18:59:12.522  INFO 6288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 18:59:13.858  WARN 6288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 18:59:14.178  INFO 6288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 18:59:14.319  INFO 6288 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 18:59:14.708  INFO 6288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 18:59:14.711  INFO 6288 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.791 seconds (JVM running for 9.049)
+2020-05-07 19:00:11.271  INFO 6288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:00:11.271  INFO 6288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:00:11.287  INFO 6288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-05-07 19:00:11.338  INFO 6288 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:00:11.459  WARN 6288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:00:11.478  WARN 6288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:00:11.531  INFO 6288 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:11:23.934  INFO 5680 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5680 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:11:23.938 DEBUG 5680 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:11:23.938  INFO 5680 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:11:24.918  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:11:25.078  INFO 5680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 6 JPA repository interfaces.
+2020-05-07 19:11:25.999  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:11:26.011  INFO 5680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:11:26.012  INFO 5680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:11:26.152  INFO 5680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:11:26.152  INFO 5680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2145 ms
+2020-05-07 19:11:26.476  INFO 5680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:11:26.549  INFO 5680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:11:26.683  INFO 5680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:11:26.789  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:11:26.929  INFO 5680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:11:26.949  INFO 5680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:11:28.003  INFO 5680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:11:28.012  INFO 5680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:11:29.339  WARN 5680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:11:29.635  INFO 5680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:11:29.794  INFO 5680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:11:30.188  INFO 5680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:11:30.190  INFO 5680 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 7.867 seconds (JVM running for 9.124)
+2020-05-07 19:11:38.662  INFO 5680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:11:38.662  INFO 5680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:11:38.679  INFO 5680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-05-07 19:11:38.724  INFO 5680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:11:38.845  WARN 5680 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:11:38.859  WARN 5680 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:11:38.907  INFO 5680 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:12:05.989  INFO 5680 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:12:06.017  INFO 5680 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:14:01.403  INFO 6344 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6344 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:14:01.624 DEBUG 6344 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:14:01.624  INFO 6344 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:14:02.881  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:14:03.001  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 6 JPA repository interfaces.
+2020-05-07 19:14:04.308  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:14:04.320  INFO 6344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:14:04.321  INFO 6344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:14:04.509  INFO 6344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:14:04.509  INFO 6344 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2804 ms
+2020-05-07 19:14:04.892  INFO 6344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:14:04.969  INFO 6344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:14:05.106  INFO 6344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:14:05.222  INFO 6344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:14:05.365  INFO 6344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:14:05.385  INFO 6344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:14:06.533  INFO 6344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:14:06.543  INFO 6344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:14:07.979  WARN 6344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:14:08.395  INFO 6344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:14:08.702  INFO 6344 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:14:09.111  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:14:09.114  INFO 6344 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.349 seconds (JVM running for 10.616)
+2020-05-07 19:14:09.467  INFO 6344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:14:09.468  INFO 6344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:14:09.483  INFO 6344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-05-07 19:14:09.525  INFO 6344 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:14:09.629  WARN 6344 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:14:09.644  WARN 6344 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:14:09.684  INFO 6344 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:15:50.827  INFO 1736 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 1736 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:15:50.832 DEBUG 1736 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:15:50.833  INFO 1736 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:15:52.333  INFO 1736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:15:52.511  INFO 1736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161ms. Found 6 JPA repository interfaces.
+2020-05-07 19:15:53.669  INFO 1736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:15:53.681  INFO 1736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:15:53.681  INFO 1736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:15:53.969  INFO 1736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:15:53.970  INFO 1736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2835 ms
+2020-05-07 19:15:54.294  INFO 1736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:15:54.366  INFO 1736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:15:54.500  INFO 1736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:15:54.609  INFO 1736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:15:54.759  INFO 1736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:15:54.781  INFO 1736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:15:55.827  INFO 1736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:15:55.836  INFO 1736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:15:57.146  WARN 1736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:15:57.435  INFO 1736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:15:57.572  INFO 1736 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:15:57.938  INFO 1736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:15:57.941  INFO 1736 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.098 seconds (JVM running for 9.408)
+2020-05-07 19:16:28.155  INFO 1736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:16:28.155  INFO 1736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:16:28.170  INFO 1736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-05-07 19:16:28.214  INFO 1736 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:16:28.325  WARN 1736 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:16:28.340  WARN 1736 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:16:28.382  INFO 1736 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:17:35.192  INFO 1736 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:17:35.222  INFO 1736 --- [http-nio-8080-exec-4] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:22:32.813  INFO 6648 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6648 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:22:32.818 DEBUG 6648 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:22:32.818  INFO 6648 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:22:34.614  INFO 6648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:22:34.858  INFO 6648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 221ms. Found 6 JPA repository interfaces.
+2020-05-07 19:22:36.486  INFO 6648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:22:36.507  INFO 6648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:22:36.508  INFO 6648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:22:36.726  INFO 6648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:22:36.727  INFO 6648 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3808 ms
+2020-05-07 19:22:37.193  INFO 6648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:22:37.328  INFO 6648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:22:37.580  INFO 6648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:22:37.743  INFO 6648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:22:37.968  INFO 6648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:22:38.006  INFO 6648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:22:39.633  INFO 6648 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:22:39.644  INFO 6648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:22:41.792  WARN 6648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:22:42.247  INFO 6648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:22:42.472  INFO 6648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:22:43.071  INFO 6648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:22:43.076  INFO 6648 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 11.807 seconds (JVM running for 13.721)
+2020-05-07 19:22:57.724  INFO 6648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:22:57.724  INFO 6648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:22:57.753  INFO 6648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-05-07 19:22:57.831  INFO 6648 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:22:58.014  WARN 6648 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:22:58.042  WARN 6648 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:22:58.103  INFO 6648 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:23:55.980  INFO 3008 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 3008 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:23:55.985 DEBUG 3008 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:23:55.986  INFO 3008 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:23:57.792  INFO 3008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:23:58.017  INFO 3008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202ms. Found 6 JPA repository interfaces.
+2020-05-07 19:23:59.432  INFO 3008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:23:59.449  INFO 3008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:23:59.449  INFO 3008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:23:59.681  INFO 3008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:23:59.681  INFO 3008 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3597 ms
+2020-05-07 19:24:00.178  INFO 3008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:24:00.281  INFO 3008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:24:00.494  INFO 3008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:24:00.653  INFO 3008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:24:00.865  INFO 3008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:24:00.899  INFO 3008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:24:02.442  INFO 3008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:24:02.453  INFO 3008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:24:04.472  WARN 3008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:24:04.917  INFO 3008 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:24:05.133  INFO 3008 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:24:05.731  INFO 3008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:24:05.736  INFO 3008 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 11.428 seconds (JVM running for 13.273)
+2020-05-07 19:24:15.922  INFO 3008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:24:15.922  INFO 3008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:24:15.958  INFO 3008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-05-07 19:24:16.035  INFO 3008 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:24:16.204  WARN 3008 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:24:16.226  WARN 3008 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:24:16.280  INFO 3008 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:26:27.015  INFO 5188 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5188 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 19:26:27.019 DEBUG 5188 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 19:26:27.020  INFO 5188 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 19:26:28.208  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 19:26:28.334  INFO 5188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 6 JPA repository interfaces.
+2020-05-07 19:26:29.248  INFO 5188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 19:26:29.260  INFO 5188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 19:26:29.261  INFO 5188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 19:26:29.483  INFO 5188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 19:26:29.483  INFO 5188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2379 ms
+2020-05-07 19:26:29.857  INFO 5188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 19:26:29.929  INFO 5188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 19:26:30.065  INFO 5188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 19:26:30.174  INFO 5188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 19:26:30.315  INFO 5188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 19:26:30.336  INFO 5188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 19:26:31.363  INFO 5188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 19:26:31.372  INFO 5188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 19:26:32.667  WARN 5188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 19:26:32.954  INFO 5188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 19:26:33.118  INFO 5188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 19:26:33.476  INFO 5188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 19:26:33.479  INFO 5188 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.494 seconds (JVM running for 9.826)
+2020-05-07 19:26:43.057  INFO 5188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 19:26:43.057  INFO 5188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 19:26:43.102  INFO 5188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2020-05-07 19:26:43.227  INFO 5188 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:26:43.498  WARN 5188 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:26:43.539  WARN 5188 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 19:26:43.636  INFO 5188 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:34:07.190  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:34:07.224  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:38:18.611  INFO 5188 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:38:18.640  INFO 5188 --- [http-nio-8080-exec-10] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:38:53.618  INFO 5188 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:38:53.641  INFO 5188 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 19:55:07.248  INFO 5188 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 19:55:07.307  INFO 5188 --- [http-nio-8080-exec-3] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:16:07.880  INFO 5188 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:16:07.913  INFO 5188 --- [http-nio-8080-exec-5] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:16:29.893  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:16:29.925  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:35:14.541  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:35:14.577  INFO 5188 --- [http-nio-8080-exec-7] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:35:26.666  INFO 5188 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:35:26.695  INFO 5188 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:41:09.786  INFO 5188 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:41:09.804  INFO 5188 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 20:44:33.416  INFO 6616 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 6616 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 20:44:33.425 DEBUG 6616 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 20:44:33.425  INFO 6616 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 20:44:34.587  INFO 6616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 20:44:34.757  INFO 6616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 6 JPA repository interfaces.
+2020-05-07 20:44:35.829  INFO 6616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 20:44:35.843  INFO 6616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 20:44:35.844  INFO 6616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 20:44:36.038  INFO 6616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 20:44:36.039  INFO 6616 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2514 ms
+2020-05-07 20:44:36.402  INFO 6616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 20:44:36.586  INFO 6616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 20:44:36.736  INFO 6616 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 20:44:36.855  INFO 6616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 20:44:37.019  INFO 6616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 20:44:37.041  INFO 6616 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 20:44:38.389  INFO 6616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 20:44:38.413  INFO 6616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 20:44:40.067  WARN 6616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 20:44:40.386  INFO 6616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 20:44:40.585  INFO 6616 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 20:44:41.139  INFO 6616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 20:44:41.142  INFO 6616 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 9.985 seconds (JVM running for 11.69)
+2020-05-07 20:45:03.300  INFO 6616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 20:45:03.300  INFO 6616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 20:45:03.334  INFO 6616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2020-05-07 20:45:03.413  INFO 6616 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 20:45:03.958  WARN 6616 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 20:45:03.980  WARN 6616 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 20:45:04.031  INFO 6616 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:19:55.031  INFO 5852 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5852 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 21:19:55.042 DEBUG 5852 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 21:19:55.043  INFO 5852 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 21:19:56.340  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 21:19:56.498  INFO 5852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 6 JPA repository interfaces.
+2020-05-07 21:19:58.267  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 21:19:58.288  INFO 5852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 21:19:58.289  INFO 5852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 21:19:58.523  INFO 5852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 21:19:58.523  INFO 5852 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3372 ms
+2020-05-07 21:19:59.000  INFO 5852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 21:19:59.118  INFO 5852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 21:19:59.346  INFO 5852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 21:19:59.499  INFO 5852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 21:19:59.686  INFO 5852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 21:19:59.711  INFO 5852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 21:20:01.015  INFO 5852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 21:20:01.026  INFO 5852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 21:20:02.955  WARN 5852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 21:20:03.275  INFO 5852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 21:20:03.421  INFO 5852 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 21:20:03.822  INFO 5852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 21:20:03.825  INFO 5852 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 10.744 seconds (JVM running for 12.218)
+2020-05-07 21:20:16.608  INFO 5852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 21:20:16.609  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 21:20:16.627  INFO 5852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-05-07 21:20:16.676  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 21:20:16.800  WARN 5852 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 21:20:16.824  WARN 5852 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 21:20:16.872  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:27:34.584  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 21:27:34.617  INFO 5852 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:27:49.660  INFO 5852 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 21:27:49.684  INFO 5852 --- [http-nio-8080-exec-2] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:34:35.641  INFO 5916 --- [main] com.cedar.MyblogsApplication             : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 5916 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-07 21:34:35.646 DEBUG 5916 --- [main] com.cedar.MyblogsApplication             : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 21:34:35.646  INFO 5916 --- [main] com.cedar.MyblogsApplication             : The following profiles are active: dev
+2020-05-07 21:34:37.377  INFO 5916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 21:34:37.586  INFO 5916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195ms. Found 6 JPA repository interfaces.
+2020-05-07 21:34:38.639  INFO 5916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 21:34:38.651  INFO 5916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 21:34:38.651  INFO 5916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-07 21:34:38.836  INFO 5916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 21:34:38.837  INFO 5916 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3130 ms
+2020-05-07 21:34:39.160  INFO 5916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 21:34:39.232  INFO 5916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 21:34:39.365  INFO 5916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 21:34:39.474  INFO 5916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 21:34:39.615  INFO 5916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 21:34:39.635  INFO 5916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 21:34:40.654  INFO 5916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 21:34:40.663  INFO 5916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 21:34:42.036  WARN 5916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 21:34:42.331  INFO 5916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 21:34:42.472  INFO 5916 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 21:34:42.839  INFO 5916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 21:34:42.842  INFO 5916 --- [main] com.cedar.MyblogsApplication             : Started MyblogsApplication in 8.427 seconds (JVM running for 9.774)
+2020-05-07 21:35:13.966  INFO 5916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 21:35:13.967  INFO 5916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 21:35:13.985  INFO 5916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-05-07 21:35:14.035  INFO 5916 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 21:35:14.157  WARN 5916 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 21:35:14.176  WARN 5916 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-07 21:35:14.231  INFO 5916 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:36:06.184  INFO 5916 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.cedar.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-05-07 21:36:06.212  INFO 5916 --- [http-nio-8080-exec-1] com.cedar.aspect.LogAspect               : result : {}index
+2020-05-07 21:39:14.345  WARN 6128 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/mavenwarehouse/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/D:/mavenwarehouse/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-05-07 21:39:14.377  INFO 6128 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Starting MyblogsApplicationTests on XH1V6T6YLH1FMC9 with PID 6128 (started by Administrator in C:\Users\Administrator\Desktop\��Ŀ����\Myblogs)
+2020-05-07 21:39:14.380 DEBUG 6128 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-07 21:39:14.380  INFO 6128 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : The following profiles are active: dev
+2020-05-07 21:39:15.840  INFO 6128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 21:39:16.056  INFO 6128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195ms. Found 6 JPA repository interfaces.
+2020-05-07 21:39:17.836  INFO 6128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 21:39:18.014  INFO 6128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-07 21:39:18.334  INFO 6128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 21:39:18.888  INFO 6128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 21:39:19.223  INFO 6128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 21:39:19.256  INFO 6128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-07 21:39:21.203  INFO 6128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 21:39:21.230  INFO 6128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 21:39:24.812  WARN 6128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 21:39:25.592  INFO 6128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 21:39:25.912  INFO 6128 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-07 21:39:26.948  INFO 6128 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Started MyblogsApplicationTests in 13.649 seconds (JVM running for 15.436)
+2020-05-07 21:39:27.327  INFO 6128 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 21:39:27.331  INFO 6128 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 21:39:27.336  INFO 6128 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 21:39:27.402  INFO 6128 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

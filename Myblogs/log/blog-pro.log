@@ -1,0 +1,6 @@
+2020-03-19 11:05:20.128  INFO 11252 --- [main] com.cedar.myblogs.MyblogsApplication     : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 11252 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-03-19 11:05:20.135  INFO 11252 --- [main] com.cedar.myblogs.MyblogsApplication     : The following profiles are active: pro
+2020-03-19 11:05:23.408  WARN 11252 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-19 11:05:23.814  INFO 11252 --- [main] com.cedar.myblogs.MyblogsApplication     : Started MyblogsApplication in 4.745 seconds (JVM running for 6.127)
+2020-03-19 11:13:58.413  INFO 7988 --- [main] com.cedar.myblogs.MyblogsApplication     : Starting MyblogsApplication on XH1V6T6YLH1FMC9 with PID 7988 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-03-19 11:13:58.418  INFO 7988 --- [main] com.cedar.myblogs.MyblogsApplication     : The following profiles are active: pro

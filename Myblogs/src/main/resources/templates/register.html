@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../static/css/Login/style.css" th:href="@{/css/Login/style.css}">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"  charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="" th:action="@{/saveReader}" method="post" class="login-form">
+			<h1>Register</h1>
+			<p style="text-align: center;color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+			<div class="txtb">
+				<input type="text" name="name" id="name" />
+				<span data-placeholder="Username"></span>
+			</div>
+			<div class="txtb">
+				<input type="password" name="password" id="password" />
+				<span data-placeholder="Password"></span>
+			</div>
+			<div class="txtb">
+				<input type="text" name="email" id="email" />
+				<span data-placeholder="email"></span>
+			</div>
+			<div class="txtb">
+				<input type="text" name="phone" id="phone" />
+				<span data-placeholder="Phone"></span>
+			</div>
+			<input type="submit" class="logbtu" value="Register" onclick=" return form_verfiy()"/>
+		</form>
+		<script>
+            $(".txtb input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+            $(".txtb input").on("blur",function(){
+                if($(this).val()=="")
+                    $(this).removeClass("focus");
+            });
+
+            function form_verfiy(){
+                var str_name=document.getElementById("username").value;
+                var str_password=document.getElementById("password").value;
+                var str_email=document.getElementById("email").value;
+                var str_phone=document.getElementById("phone").value;
+                var HanZi=/^[\u4e00-\u9fa5]+$/;
+                var phone=/^[0-9]{11}$/;
+                var email=/^[@]{1}$/;
+                if(str_name==""){
+                    alert("请输入用户名");
+                    return false;
+                }else if(HanZi.test(str_name)){
+                    alert("用户名不得输入汉字");
+                    return false;
+                }
+                if(str_password==""){
+                    alert("请输入密码");
+                    return false;
+                }else if(HanZi.test(str_password)){
+                    alert("密码不得输入汉字");
+                    return false;
+                }
+                if(str_email==""){
+                    alert("请输入邮箱")
+					return false;
+				}else if(str_email.test(email)){
+                    alert("邮箱格式不正确，请检查");
+                    return false;
+				}
+                if(str_phone==""){
+                    alert("请输入电话号码,此号码将作为修改密码的凭证");
+                    return false;
+                }else if(!phone.test(str_phone)){
+                    alert("电话号码格式有误");
+                    return false;
+                }
+            }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../static/css/Corrpass/style.css" th:href="@{css/Corrpass/style.css}"/>
+		<link rel="stylesheet" type="text/css" href="css/Corrpass/iconfont.css">
+	</head>
+	<body>
+		<div class="bg-img">
+			<div class="content">
+				<header>Change Your Password</header>
+				<p style="text-align: center;color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+				<form action="" th:action="@{/updateReader}" method="post">
+					<div class="field">
+						<span><i class="iconfont icon-wode"></i></span>
+						<input type="text" name="name" id="name" placeholder="Enter You Username" />
+					</div>
+					<div class="field space">
+						<span><i class="iconfont icon-phone-fill"></i></span>
+						<input type="text" name="phone" id="phone" placeholder="Enter You Phone" />
+					</div>
+					<div class="field space">
+						<span><i class="iconfont icon-suoding"></i></span>
+						<input type="password" class="password" name="password" id="password" required="" placeholder="Enter New Password" />
+						<span class="show">SHOW</span>
+							
+						</span>
+					</div>
+					<div class="field space">
+						<input type="submit" value="Alter" onclick=" return form_verfiy()"/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+			const pass_field=document.querySelector('.password');
+			const show_btn=document.querySelector('.show');
+			show_btn.addEventListener('click',function(){
+				if(pass_field.type === "password"){
+					pass_field.type="text";
+				}else{
+					pass_field.type="password";
+				}
+			});
+
+            function form_verfiy(){
+                var str_name=document.getElementById("username").value;
+                var str_password=document.getElementById("password").value;
+                var str_phone=document.getElementById("phone").value;
+                var HanZi=/^[\u4e00-\u9fa5]+$/;
+                var phone=/^[0-9]{11}$/;
+                if(str_name==""){
+                    alert("请输入用户名");
+                    return false;
+                }else if(HanZi.test(str_name)){
+                    alert("用户名不得输入汉字");
+                    return false;
+                }
+                if(str_password==""){
+                    alert("请输入密码");
+                    return false;
+                }else if(HanZi.test(str_password)){
+                    alert("密码不得输入汉字");
+                    return false;
+                }
+                if(str_phone==""){
+                    alert("请输入电话号码");
+                    return false;
+                }else if(!phone.test(str_phone)){
+                    alert("电话号码格式有误");
+                    return false;
+                }
+            }
+		</script>
+	</body>
+</html>

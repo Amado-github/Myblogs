@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+	<link rel="stylesheet" href="../../static/css/Login/Login.css" th:href="@{/css/Login/Login.css}" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"  charset="utf-8"></script>
+</head>
+<body>
+		<form action="" th:action="@{/admin/login}" method="post" >
+			<div id="login_box">
+			<h2>LOGIN</h2>
+                <p style="text-align: center;color: red" th:text="${message}" th:if="${not #strings.isEmpty(message)}"></p>
+			<div id="form">
+				<div id="input_box">
+					<input type="text" name="username" id="username" placeholder="Username"/>
+				</div>
+				<div id="input_box">
+					<input type="password" name="password" id="password" placeholder="Password"/>
+				</div>
+			</div>
+			<input type="submit" value="Login" onclick=" return form_verfiy()" />
+			</div>
+		</form>
+		<script>
+            function form_verfiy(){
+                var str_name=document.getElementById("username").value;
+                var str_password=document.getElementById("password").value;
+                var HanZi=/^[\u4e00-\u9fa5]+$/;
+                if(str_name==""){
+                    alert("请输入用户名");
+                    return false;
+                }else if(HanZi.test(str_name)){
+                    alert("用户名不得输入汉字");
+                    return false;
+                }
+                if(str_password==""){
+                    alert("请输入密码");
+                    return false;
+                }else if(HanZi.test(str_password)){
+                    alert("密码不得输入汉字");
+                    return false;
+                }
+            }
+            $(".txtb input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+            $(".txtb input").on("blur",function(){
+                if($(this).val()=="")
+                    $(this).removeClass("focus");
+            });
+		</script>
+</body>
+</html>

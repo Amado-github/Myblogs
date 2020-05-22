@@ -1,0 +1,60 @@
+2020-05-14 23:35:10.648  WARN 7220 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/mavenwarehouse/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/D:/mavenwarehouse/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-05-14 23:35:10.728  INFO 7220 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Starting MyblogsApplicationTests on XH1V6T6YLH1FMC9 with PID 7220 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-14 23:35:10.730 DEBUG 7220 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-14 23:35:10.731  INFO 7220 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : The following profiles are active: dev
+2020-05-14 23:35:12.251  INFO 7220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-14 23:35:12.490  INFO 7220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220ms. Found 7 JPA repository interfaces.
+2020-05-14 23:35:14.363  INFO 7220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-14 23:35:14.512  INFO 7220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-14 23:35:14.882  INFO 7220 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-14 23:35:15.442  INFO 7220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-14 23:35:15.795  INFO 7220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-14 23:35:15.829  INFO 7220 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-14 23:35:17.832  INFO 7220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-14 23:35:17.850  INFO 7220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-14 23:35:21.566  WARN 7220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-14 23:35:22.319  INFO 7220 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-14 23:35:22.682  INFO 7220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-14 23:35:23.742  INFO 7220 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Started MyblogsApplicationTests in 14.243 seconds (JVM running for 16.109)
+2020-05-14 23:35:24.193  INFO 7220 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-14 23:35:24.198  INFO 7220 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-14 23:35:24.203  INFO 7220 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-14 23:35:24.268  INFO 7220 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-14 23:50:48.421  WARN 6316 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/mavenwarehouse/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/D:/mavenwarehouse/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-05-14 23:50:48.524  INFO 6316 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Starting MyblogsApplicationTests on XH1V6T6YLH1FMC9 with PID 6316 (started by Administrator in C:\Users\Administrator\Desktop\项目演练\Myblogs)
+2020-05-14 23:50:48.535 DEBUG 6316 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-14 23:50:48.535  INFO 6316 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : The following profiles are active: dev
+2020-05-14 23:50:50.955  INFO 6316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-14 23:50:51.153  INFO 6316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 180ms. Found 7 JPA repository interfaces.
+2020-05-14 23:50:53.023  INFO 6316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-14 23:50:53.190  INFO 6316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-14 23:50:53.492  INFO 6316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-14 23:50:54.098  INFO 6316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-14 23:50:54.488  INFO 6316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-14 23:50:54.535  INFO 6316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-05-14 23:50:56.397  INFO 6316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-14 23:50:56.411  INFO 6316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-14 23:51:00.141  WARN 6316 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-14 23:51:00.868  INFO 6316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-14 23:51:01.267  INFO 6316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-14 23:51:02.193  INFO 6316 --- [main] c.cedar.myblogs.MyblogsApplicationTests  : Started MyblogsApplicationTests in 16.282 seconds (JVM running for 18.682)
+2020-05-14 23:51:02.471  INFO 6316 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-14 23:51:02.477  INFO 6316 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-14 23:51:02.480  INFO 6316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-14 23:51:02.506  INFO 6316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
